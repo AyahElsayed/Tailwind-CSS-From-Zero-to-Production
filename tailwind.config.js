@@ -1,5 +1,8 @@
 module.exports = {
-  purge: [],
+  // purge css is a tool that's going to remove your unused css
+  purge: {
+    content: ["./src/**/*.jsx", "./index.html"],
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
